@@ -11,6 +11,7 @@ def capture_thread():
         ret, frame = cap.read()
         if not ret:
             break
+        frame = cv2.rotate(frame, cv2.ROTATE_90_COUNTERCLOCKWISE)
         if not frame_queue.full():
             frame_queue.put(frame)
         else:
