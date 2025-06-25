@@ -1,2 +1,12 @@
 # git upload
 上传我的raspberrypi代码
+
+## 更新Github仓库代码
+
+git clone 仓库
+
+git add .
+
+git  commit -m 修改后的文件
+
+git push https......（Git仓库网址）
