@@ -30,6 +30,7 @@ typedef long long               s64;
 int
 i2c_read_data(u8 addr, u8 reg, u8 *val, u32 len);
 
+void i2c_close(int fd);
 int
 i2c_write_data(u8 addr, u8 reg, u8 *val, u32 len);
 
